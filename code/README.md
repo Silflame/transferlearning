@@ -31,6 +31,7 @@ This document contains codes from several aspects: **tutorial**, **theory**, **t
 - MMD and MK-MMD：[Matlab](https://github.com/lopezpaz/classifier_tests/tree/master/code/unit_test_mmd) | [Python](https://github.com/jindongwang/transferlearning/tree/master/code/distance/mmd.py)
 - $A$-distance: [Python](https://github.com/jindongwang/transferlearning/tree/master/code/distance/proxy_a_distance.py)
 - CORAL loss: [Python](https://github.com/jindongwang/transferlearning/tree/master/code/distance/coral_loss.py)
+- Metric learning: [Python](https://github.com/metric-learn/metric-learn)
 
 ## Traditional transfer learning methods  非深度迁移
 
@@ -87,9 +88,9 @@ This document contains codes from several aspects: **tutorial**, **theory**, **t
 - **RTN** (Unsupervised Domain Adaptation with Residual Transfer Networks, NIPS-16) [12]
 	- [Caffe](https://github.com/thuml/Xlearn)
 - **ADDA** (Adversarial Discriminative Domain Adaptation, arXiv-17) [13]
-	- [Tensorflow(Official)](https://github.com/erictzeng/adda) | [Pytorch](https://github.com/corenel/pytorch-adda)
+	- [Tensorflow(Official)](https://github.com/erictzeng/adda) | [Pytorch](https://github.com/corenel/pytorch-adda) | [Pytorch(another)](https://github.com/jvanvugt/pytorch-domain-adaptation/blob/master/adda.py)
 - **RevGrad** (Unsupervised Domain Adaptation by Backpropagation, ICML-15) [14]
-	- [Caffe(Official)](https://github.com/ddtm/caffe/tree/grl)|[Tensorflow(third party)](https://github.com/shucunt/domain_adaptation) | [PyTorch](https://github.com/fungtion/DANN)
+	- [Caffe(Official)](https://github.com/ddtm/caffe/tree/grl)|[Tensorflow(third party)](https://github.com/shucunt/domain_adaptation) | [PyTorch](https://github.com/fungtion/DANN) | [Pytorch(another)](https://github.com/jvanvugt/pytorch-domain-adaptation/blob/master/revgrad.py)
 - **DANN** Domain-Adversarial Training of Neural Networks (JMLR-16)[17] 
 	- [Python(official)](https://github.com/GRAAL-Research/domain_adversarial_neural_network) | [Tensorflow](https://github.com/jindongwang/tf-dann)
 - Associative Domain Adaptation (ICCV-17) [18]
@@ -103,7 +104,7 @@ This document contains codes from several aspects: **tutorial**, **theory**, **t
 - **AutoDIAL** (Automatic DomaIn Alignment Layers, ICCV-17) [25]
 	- [Caffe](https://github.com/ducksoup/autodial)
 - **DSN** (Domain Separation Networks, NIPS-16) [26]
-	- [Tensorflow](https://github.com/tensorflow/models/tree/master/research/domain_adaptation)
+	- [Pytorch](https://github.com/fungtion/DSN) | [Tensorflow](https://github.com/tensorflow/models/tree/master/research/domain_adaptation)
 - **DRCN** (Deep Reconstruction-Classification Networks for Unsupervised Domain Adaptation, ECCV-16) [27]
 	- [Keras](https://github.com/ghif/drcn) | [Pytorch](https://github.com/fungtion/DRCN)
 - Multi-task Autoencoders for Domain Generalization (ICCV-15) [28]
@@ -132,6 +133,24 @@ This document contains codes from several aspects: **tutorial**, **theory**, **t
 	- [Tensorflow](https://github.com/YingZhangDUT/Deep-Mutual-Learning)
 - Self-ensembling for visual domain adaptation (ICLR 2018) [45]
 	- [Pytorch](https://github.com/Britefury/self-ensemble-visual-domain-adapt)
+- **PADA** (Partial Adversarial Domain Adaptation, ECCV-18) [48]
+	- [Pytorch(Official)](https://github.com/thuml/PADA)
+- **iCAN** (Incremental Collaborative and Adversarial Network for Unsupervised Domain Adaptation, CVPR-18) [49]
+	- [Pytorch](https://github.com/mahfuj9346449/iCAN)
+- **WeightedGAN** (Importance Weighted Adversarial Nets for Partial Domain Adaptation, CVPR-18) [50]
+	- [Caffe](https://github.com/hellojing89/weightedGANpartialDA)
+- **OpenSet** (Open Set Domain Adaptation by Backpropagation) [51]
+	- [Tensorflow](https://github.com/Mid-Push/Open_set_domain_adaptation)
+- **WDGRL** (Wasserstein Distance Guided Representation Learning, AAAI-18) [52]
+	- [Pytorch](https://github.com/jvanvugt/pytorch-domain-adaptation/blob/master/wdgrl.py)
+- **JDDA** (Joint Domain Alignment and Discriminative Feature Learning) [53]
+	- [Tensorflow](https://github.com/A-bone1/JDDA)
+- Multi-modal Cycle-consistent Generalized Zero-Shot Learning (ECCV-18) [54]
+	- [Tensorflow](https://github.com/rfelixmg/frwgan-eccv18)
+- **MSTN** (Moving Semantic Transfer Network, ICML-18) [55]
+	- [Tensorflow](https://github.com/Mid-Push/Moving-Semantic-Transfer-Network)
+- **SAN** (Partial Transfer Learning With Selective Adversarial Networks, CVPR-18) [56]
+	- [Caffe, Pytorch](https://github.com/thuml/SAN)
 
 - - -
 
@@ -240,3 +259,21 @@ accepted in International Conference on Computer Vision (ICCV 2015), Santiago, C
 [46] van Laarhoven T, Marchiori E. Unsupervised Domain Adaptation with Random Walks on Target Labelings[J]. arXiv preprint arXiv:1706.05335, 2017.
 
 [47] Jindong Wang, Wenjie Feng, Yiqiang Chen, Han Yu, Meiyu Huang, Philip S. Yu. Visual Domain Adaptation with Manifold Embedded Distribution Alignment. ACM Multimedia conference 2018.
+
+[48] Zhangjie Cao, Mingsheng Long, et al. Partial Adversarial Domain Adaptation. ECCV 2018.
+
+[49] Zhang W, Ouyang W, Li W, et al. Collaborative and Adversarial Network for Unsupervised domain adaptation[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 3801-3809.
+
+[50] Zhang J, Ding Z, Li W, et al. Importance Weighted Adversarial Nets for Partial Domain Adaptation[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018: 8156-8164.
+
+[51] Saito K, Yamamoto S, Ushiku Y, et al. Open Set Domain Adaptation by Backpropagation[J]. arXiv preprint arXiv:1804.10427, 2018.
+
+[52] Shen J, Qu Y, Zhang W, et al. Wasserstein Distance Guided Representation Learning for Domain Adaptation[C]//AAAI. 2018.
+
+[53] Chen C, Chen Z, Jiang B, et al. Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation[J]. arXiv preprint arXiv:1808.09347, 2018.
+
+[54] Felix R, Vijay Kumar B G, Reid I, et al. Multi-modal Cycle-consistent Generalized Zero-Shot Learning. ECCV 2018.
+
+[55] Xie S, Zheng Z, Chen L, et al. Learning Semantic Representations for Unsupervised Domain Adaptation[C]//International Conference on Machine Learning. 2018: 5419-5428.
+
+[56] Cao Z, Long M, Wang J, et al. Partial transfer learning with selective adversarial networks. CVPR 2018.
